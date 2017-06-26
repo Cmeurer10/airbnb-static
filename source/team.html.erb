@@ -1,0 +1,13 @@
+<div class="team-container text-center padded">
+  <h1>Our team</h1>
+  <ul class="list-inline padded">
+    <% %w(cole jeff).each do |member| %>
+      <li>
+        <h2><%= member.capitalize %></h3>
+        <%= image_tag "#{member}.jpg", class: "avatar-xl" %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "contact@airbnb.com", "mailto:contact@airbnb.com", class: 'btn btn-primary'%>
+</div>
